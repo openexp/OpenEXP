@@ -1,14 +1,26 @@
 {
-  "name": "BrainWaves",
-  "productName": "BrainWaves",
-  "version": "0.8.2",
-  "description": "EEG Desktop Application",
+  "name": "openexp-app",
+  "productName": "OpenEXP",
+  "version": "0.1.0",
+  "description": "Desktop Application for learning Experiment Creation, Research Methods, and Data Analysis",
   "main": "./main.prod.js",
   "author": {
-    "name": "Dano Morrison",
-    "email": "dano@neurotechx.com",
-    "url": "https://github.com/makebrainwaves"
+      "name": "Dano Morrison",
+      "email": "dano@neurotechx.com",
+      "url": "https://github.com/makebrainwaves"
   },
+  "contributors": [
+    {
+      "name": "Dano Morrison",
+      "email": "dano@neurotechx.com",
+      "url": "https://github.com/makebrainwaves"
+    },
+    {
+      "name": "Teon Brooks",
+      "email": "teon.brooks@gmail.com",
+      "url": "https://teonbrooks.github.com/"
+    }
+  ],
   "scripts": {
     "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
     "postinstall": "patch-package && npm run electron-rebuild"

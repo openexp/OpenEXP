@@ -1,8 +1,8 @@
 {
-  "name": "BrainWaves",
-  "productName": "BrainWaves",
-  "version": "0.8.2",
-  "description": "EEG Experiment Desktop Application",
+  "name": "openexp-app",
+  "productName": "OpenEXP",
+  "version": "0.1.0",
+  "description": "Desktop Application for learning Experiment Creation, Research Methods, and Data Analysis",
   "scripts": {
     "build": "concurrently \"npm run build-main\" \"npm run build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development node --trace-warnings -r babel-register ./node_modules/webpack/bin/webpack --config webpack.config.renderer.dev.dll.js --colors",
@@ -49,7 +49,7 @@
       "dist/",
       "node_modules/",
       "assets/",
-      "utils/jupyter/utils.py",
+      "utils/pyodide/utils.py",
       "app.html",
       "viewer.html",
       "main.prod.js",
@@ -89,13 +89,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/makebrainwaves/BrainWaves"
+    "url": "git+https://github.com/cielabs/openexp-app"
   },
   "author": {
-    "name": "Dano Morrison",
-    "email": "dano@neurotechx.com",
-    "url": "https://github.com/makebrainwaves"
+      "name": "Dano Morrison",
+      "email": "dano@neurotechx.com",
+      "url": "https://github.com/makebrainwaves"
   },
+  "contributors": [
+    {
+      "name": "Dano Morrison",
+      "email": "dano@neurotechx.com",
+      "url": "https://github.com/makebrainwaves"
+    },
+    {
+      "name": "Teon Brooks",
+      "email": "teon.brooks@gmail.com",
+      "url": "https://teonbrooks.github.com/"
+    }
+  ],
   "license": "MIT",
   "keywords": [
     "electron",
@@ -108,7 +120,7 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://wp.nyu.edu/brainwaves/",
+  "homepage": "https://cielabs.org/",
   "jest": {
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/internals/mocks/fileMock.js",

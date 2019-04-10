@@ -5,10 +5,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-#  Jupyter stuff
+# Jupyter stuff
 .ipynb_checkpoints
 __pycache__
 
+# Pyodide src files
+app/utils/pyodide/src
 
 # Runtime data
 pids

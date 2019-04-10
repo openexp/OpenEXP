@@ -1,4 +1,4 @@
-name: brainwaves
+name: openexp
 channels:
 - defaults
 dependencies:

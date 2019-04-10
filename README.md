@@ -2,7 +2,7 @@
   <img alt="banner" src="app_logo.png" width="600">
 </p>
 <p align="center" href="">
-  An easy-to-use platform for EEG experimentation in the classroom
+  An easy-to-use platform for teaching experiment design, research methods, and data analysis in the classroom
 </p>
 
 ## Features
@@ -19,11 +19,11 @@
 
 ## Prerequisites
 
-BrainWaves is an Electron app that can be installed natively on your system. However, because it makes use of the [MNE Python](https://martinos.org/mne/stable/index.html) library to perform EEG analysis, it is necessary to set up an appropriate Python environment to be able to analyze collected experimental results.
+OpenEXP is an Electron app that can be installed natively on your system. However, because it makes use of the [MNE Python](https://martinos.org/mne/stable/index.html) library to perform EEG analysis, it is necessary to set up an appropriate Python environment to be able to analyze collected experimental results.
 
 ### Environment Setup
 
-BrainWaves needs an Anaconda environment called "brainwaves" with the right
+OpenEXP needs an Anaconda environment called "brainwaves" with the right
 dependencies to run its analysis.
 
 1. Download and install Anaconda for Python 3. We recommend using the
@@ -78,14 +78,14 @@ following command on Windows_
 1. First, clone the repo via git:
 
 ```bash
-git clone https://github.com/makebrainwaves/BrainWaves.git
+git clone https://github.com/cielabs/OpenEXP.git
 ```
 
 2. And then install dependencies
 
 ```bash
-$ cd BrainWaves
-$ npm install
+$ cd openexp-app
+$ npm install (--python=python2.7 if you are a macOS with Python3 installed)
 ```
 
 3. If using Emotiv, insert your Emotiv account's credentials into the file
@@ -151,11 +151,11 @@ DEBUG_PROD=true npm run package
 ```
 
 ## Contributing
-if you are interested in fixing issues with the BrainWaves app or helping us add additional features, that's amazing! Please see our [How to Contribute](https://github.com/makebrainwaves/BrainWaves/blob/master/CONTRIBUTING.md).
+if you are interested in fixing issues with the OpenEXP app or helping us add additional features, that's amazing! Please see our [How to Contribute](https://github.com/cielabs/openexp-app/blob/master/CONTRIBUTING.md).
 
-Also, read our [Code of Conduct](https://github.com/makebrainwaves/BrainWaves/blob/master/CODE_OF_CONDUCT.md)
+Also, read our [Code of Conduct](https://github.com/cielabs/openexp-app/blob/master/CODE_OF_CONDUCT.md)
 
 
 ## License
 
-[MIT](https://github.com/makebrainwaves/BrainWaves/blob/master/LICENSE)
+[MIT](https://github.com/cielabs/openexp-app/blob/master/LICENSE)
